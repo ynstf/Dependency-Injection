@@ -6,6 +6,15 @@ import dao.IDao;
 public class MetierImpl implements IMetier {
     //private IDao dao = new Daoimpl(); //Couplage fort
 
+    // Constructeur avec injection par constructeur
+    public MetierImpl(IDao dao) {
+        this.dao = dao;
+    }
+
+    // (Optionnel) Un constructeur sans argument si besoin
+    public MetierImpl() {
+    }
+
     private IDao dao; //Couplage faible
     @Override
     public double calcul() {
