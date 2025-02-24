@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.*;
 
 /*
-* Par instanciation statique
+* Par instanciation xml
 */
 public class PresentationV3 {
     public static void main(String[] args) {
