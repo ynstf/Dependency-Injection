@@ -24,7 +24,7 @@ public class PresentationV2 {
             IDao dao =(IDao) cDao.getConstructor().newInstance();
 
             String metierClass = sc.nextLine();
-            //System.out.println(metierClass);
+            //Sys    tem.out.println(metierClass);
             Class cMetier = Class.forName(metierClass);
             IMetier metier =(IMetier) cMetier.getConstructor().newInstance();
 
