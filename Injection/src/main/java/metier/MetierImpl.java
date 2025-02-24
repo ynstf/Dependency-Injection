@@ -11,7 +11,7 @@ public class MetierImpl implements IMetier {
     public double calcul() {
         double w_speed = dao.getData();
         double res = w_speed / 1000;
-        return 0;
+        return res;
     }
 
     public void setDao(IDao dao){
